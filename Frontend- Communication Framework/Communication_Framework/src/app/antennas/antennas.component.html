@@ -1,0 +1,133 @@
+<!-- Reference- David Akim(2022) -->
+
+
+<div class="sect">
+    <h2>Antennas Database</h2>
+    <p>Values can be used in Link Designs</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter an Antenna Entry</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Antenna Name</mat-label>
+                    <input
+                        matInput 
+                        #name
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Frequency Band</mat-label>
+                    <input
+                        matInput type="string"
+                        #FreqBand
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Maximum Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #MaxFreq
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Minimum Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #MinFreq
+                      
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Transmit Gain</mat-label>
+                    <input
+                        matInput type="string"
+                        #TransmitGain
+                        
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Recieve Gain</mat-label>
+                    <input
+                        matInput type="string"
+                        #ReceiveGain
+                        
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Figure of Merit</mat-label>
+                    <input
+                        matInput type="string"
+                        #FOM
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter url</mat-label>
+                    <input
+                        matInput type="string"
+                        #url
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <button mat-raised-button (click)="onAdd(name.value, FreqBand.value, MaxFreq.value, MinFreq.value,  TransmitGain.value, ReceiveGain.value, FOM.value, url.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Antennas Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let antenna of antennas">
+                        <mat-expansion-panel-header>
+                            {{antenna.Name}} {{antenna.FrequencyBand}}
+                        </mat-expansion-panel-header>
+                        Name: {{antenna.Name}} <br>
+                        FrequencyBand: {{antenna.FrequencyBand}} <br>
+                        MaxFrequency_GHz: {{antenna.MaxFrequency_GHz}} <br>
+                        MinFrequency_GHz: {{antenna.MinFrequency_GHz}} <br>
+                        TransmitGain_dBi: {{antenna.TransmitGain_dBi}} <br>
+                        ReceiveGain_dBi: {{antenna.ReceiveGain_dBi}} <br>
+                        FigureofMerit_dBi_per_K: {{antenna.FigureofMerit_dBi_per_K}} <br>
+                        url: {{antenna.url}} <br>
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>

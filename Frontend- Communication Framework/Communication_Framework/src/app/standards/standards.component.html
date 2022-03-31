@@ -1,0 +1,133 @@
+<!-- Reference- David Akim(2022) -->
+
+<div class="sect">
+    <h2>Standards Database</h2>
+    <p>Values can be used in Link Designs</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Standard Entry</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Standard Name</mat-label>
+                    <input
+                        matInput 
+                        #name
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Technology</mat-label>
+                    <input
+                        matInput type="string"
+                        #Technology
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Maximum Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #MaxFreq
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Minimum Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #MinFreq
+                      
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Bandwidth</mat-label>
+                    <input
+                        matInput type="string"
+                        #Bandwidth
+                        
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Antenna Power</mat-label>
+                    <input
+                        matInput type="string"
+                        #PowerAntenna
+                        
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Rain rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #RainRate
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter url</mat-label>
+                    <input
+                        matInput type="string"
+                        #url
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <button mat-raised-button (click)="onAdd(name.value, Technology.value, MaxFreq.value, MinFreq.value,  Bandwidth.value, PowerAntenna.value, RainRate.value, url.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Standards Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let standard of standards">
+                        <mat-expansion-panel-header>
+                            {{standard.Name}} {{standard.Technology}}
+                        </mat-expansion-panel-header>
+                        Name: {{standard.Name}} <br>
+                        Technology: {{standard.Technology}} <br>
+                        MaxOperatingFrequency_GHz: {{standard.MaxOperatingFrequency_GHz}} <br>
+                        MinOperatingFrequency_GHz: {{standard.MinOperatingFrequency_GHz}} <br>
+                        Bandwidth_MHz: {{standard.Bandwidth_MHz}} <br>
+                        PowerAntenna_dBW: {{standard.PowerAntenna_dBW}} <br>
+                        RainRate_mm_per_h: {{standard.RainRate_mm_per_h}} <br>
+                        url: {{standard.url}} <br>
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+

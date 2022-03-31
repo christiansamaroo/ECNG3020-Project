@@ -1,0 +1,426 @@
+<!-- Reference- David Akim(2022) -->
+
+
+<div class="sect">
+    <h2>BalloonSat Link Designs</h2>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter all following Inputs</mat-card-header>
+        <mat-card-content>
+            <div>
+
+                <mat-form-field>
+                    <mat-label>Enter Design Number</mat-label>
+                    <input
+                        matInput type="string"
+                        #DesN
+                        
+                     
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Focal length</mat-label>
+                    <input
+                        matInput type="string"
+                        #MEA
+                        
+                     
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Sensor Size</mat-label>
+                    <input
+                        matInput type="string"
+                        #ESGL
+                       
+
+
+                    required>
+
+
+
+                </mat-form-field>
+
+                <input
+                        matInput type="string"
+                        #AFV
+                      
+
+
+                    >
+
+                <mat-form-field>
+                    <mat-label>Enter Payload Height</mat-label>
+                    <input
+                        matInput type="string"
+                        #SH
+                      
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Link Distance</mat-label>
+                    <input
+                        matInput type="string"
+                        #LD
+                      
+
+
+                    required>
+
+                </mat-form-field>
+
+                    
+
+
+
+
+                
+                <mat-form-field>
+                    <mat-label>Enter Rain Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #RainRate
+                      
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Rain Rate Coefficient</mat-label>
+                    <input
+                        matInput type="string"
+                        #RRC
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Rain Rate Power</mat-label>
+                    <input
+                        matInput type="string"
+                        #RRP
+                        
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #RL
+                      
+
+
+                    >
+
+
+
+                <mat-form-field>
+                    <mat-label>Enter Uplink Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #UF
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #FSPLUplink
+                      
+
+
+                    >
+
+                <mat-form-field>
+                    <mat-label>Enter Earth Station Feeder Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #ESFL
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Antenna Misalignment Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #AML
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarization Misalignment Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #PML
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Atmospheric Absorption Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #AAL
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #UTL
+                      
+
+
+                    >
+
+                
+                <mat-form-field>
+                    <mat-label>Enter Power Earth Station Antenna</mat-label>
+                    <input
+                        matInput type="string"
+                        #PESA
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Gain Earth Station Antenna</mat-label>
+                    <input
+                        matInput type="string"
+                        #GESA
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Gain Payload Antenna</mat-label>
+                    <input
+                        matInput type="string"
+                        #GSA
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #SRP
+                      
+
+
+                    >
+                    
+                <mat-form-field>
+                    <mat-label>Enter Noise Temperature Payload</mat-label>
+                    <input
+                        matInput type="string"
+                        #NTS
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Channel Bandwidth</mat-label>
+                    <input
+                        matInput type="string"
+                        #CB
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                    matInput type="string"
+                    #UNTCR
+                  
+
+
+                >
+
+            
+                <mat-form-field>
+                <mat-label>Enter Downlink Frequency</mat-label>
+                <input
+                    matInput type="string"
+                    #DF
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+                <input
+                matInput type="string"
+                #FSPLDownlink
+              
+
+
+                >
+
+                <input
+                matInput type="string"
+                #DTL
+          
+
+
+                >
+
+        
+                 <mat-form-field>
+                 <mat-label>Enter Power Payload Antenna</mat-label>
+                <input
+                matInput type="string"
+                #PSA
+               
+
+
+                required>
+
+            </mat-form-field>
+
+                <input
+                matInput type="string"
+                #ESRP
+          
+
+
+                >
+
+        
+                <mat-form-field>
+                <mat-label>Enter Earth Station Noise Temperature</mat-label>
+                <input
+                matInput type="string"
+                #ESNT
+               
+
+
+                required>
+
+            </mat-form-field>
+
+                <input
+                matInput type="string"
+                 #DNTCR
+          
+
+
+                >
+
+                <input
+                matInput type="string"
+                #TNTCR
+          
+
+
+                >
+
+
+                
+                <button mat-raised-button (click)="onAdd(DesN.value, MEA.value, ESGL.value, AFV.value, SH.value, LD.value, RainRate.value, RRC.value, RRP.value, RL.value, UF.value, FSPLUplink.value, ESFL.value, AML.value, PML.value, AAL.value, UTL.value, PESA.value, GESA.value, GSA.value, SRP.value, NTS.value, CB.value, UNTCR.value, DF.value, FSPLDownlink.value, DTL.value, PSA.value, ESRP.value, ESNT.value, DNTCR.value, TNTCR.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>BalloonSat Link Designs Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let balloonsatdesign of balloonsatdesigns">
+                        <mat-expansion-panel-header>
+                            {{balloonsatdesign.DesignNumber}}
+
+                        </mat-expansion-panel-header>
+                        ES_DesignNumber: {{balloonsatdesign.DesignNumber}} <br>
+                        FocalLength_mm: {{balloonsatdesign.FocalLength_mm}} <br>
+                        SensorSize_mm: {{balloonsatdesign.SensorSize_mm}} <br>
+                        AngularFieldofView: {{balloonsatdesign.AngularFieldofView}} <br>
+                        PayloadHeight_m: {{balloonsatdesign.PayloadHeight_m}} <br>
+                        LinkDistance_km: {{balloonsatdesign.LinkDistance_km}} <br>
+                        RainRate_mm_per_h: {{balloonsatdesign.RainRate_mm_per_h}} <br>
+                        RainRateCoefficient: {{balloonsatdesign.RainRateCoefficient}} <br>
+                        RainRatePower: {{balloonsatdesign.RainRatePower}} <br>
+                        RainLoss_dB: {{balloonsatdesign.RainLoss_dB}} <br>
+                        UplinkFrequency_MHz: {{balloonsatdesign.UplinkFrequency_MHz}} <br>
+                        FSPLUplink_dB: {{balloonsatdesign.FSPLUplink_dB}} <br>
+                        ESFeederLoss_dB: {{balloonsatdesign.ESFeederLoss_dB}} <br>
+                        AntennaMisalignmentLoss_dB: {{balloonsatdesign.AntennaMisalignmentLoss_dB}} <br>
+                        PolarizationMisalignmentLoss_dB: {{balloonsatdesign.PolarizationMisalignmentLoss_dB}} <br>
+                        AtmosphericAbsorptionLoss_dB: {{balloonsatdesign.AtmosphericAbsorptionLoss_dB}} <br>
+                        UplinkTotalLosses_dB: {{balloonsatdesign.UplinkTotalLosses_dB}} <br>
+                        PowerESAntenna_dB: {{balloonsatdesign.PowerESAntenna_dB}} <br>
+                        GainESAntenna_dB: {{balloonsatdesign.GainESAntenna_dB}} <br>
+                        GainPayloadAntenna_dB: {{balloonsatdesign.GainPayloadAntenna_dB}} <br>
+                        SatelliteReceivedPower_dB: {{balloonsatdesign.SatelliteReceivedPower_dB}} <br>
+                        NoiseTemperaturePayload_K: {{balloonsatdesign.NoiseTemperaturePayload_K}} <br>
+                        ChannelBandwidth_MHz: {{balloonsatdesign.ChannelBandwidth_MHz}} <br>
+                        UplinkNoisetoCarrierRatio_dB: {{balloonsatdesign.UplinkNoisetoCarrierRatio_dB}} <br>
+                        DownlinkFrequency_MHz: {{balloonsatdesign.DownlinkFrequency_MHz}} <br>
+                        FSPLDownlink_dB: {{balloonsatdesign.FSPLDownlink_dB}} <br>
+                        DownlinkTotalLosses_dB: {{balloonsatdesign.DownlinkTotalLosses_dB}} <br>
+                        PowerPayloadAntenna_dB: {{balloonsatdesign.PowerPayloadAntenna_dB}} <br>
+                        ESReceivedPower_dB: {{balloonsatdesign.ESReceivedPower_dB}} <br>
+                        NoiseTemperatureES_K: {{balloonsatdesign.NoiseTemperatureES_K}} <br>
+                        DownlinkNoisetoCarrierRatio_dB: {{balloonsatdesign.DownlinkNoisetoCarrierRatio_dB}} <br>
+                        TotalNoisetoCarrierRatio_dB: {{balloonsatdesign.TotalNoisetoCarrierRatio_dB}} <br>
+                        
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>

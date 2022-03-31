@@ -1,0 +1,133 @@
+<!-- Reference- David Akim(2022) -->
+
+<div class="sect">
+    <h2>Transceivers Database</h2>
+    <p>Values can be used in Link Designs</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Transceiver Entry</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Transceiver Name</mat-label>
+                    <input
+                        matInput 
+                        #name
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Frequency Band</mat-label>
+                    <input
+                        matInput type="string"
+                        #FreqBand
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Maximum Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #MaxFreq
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Minimum Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #MinFreq
+                      
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Output Power</mat-label>
+                    <input
+                        matInput type="string"
+                        #OutputPower
+                        
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Sensitivity</mat-label>
+                    <input
+                        matInput type="string"
+                        #Sensitivity
+                        
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Data Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #DataRate
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter url</mat-label>
+                    <input
+                        matInput type="string"
+                        #url
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <button mat-raised-button (click)="onAdd(name.value, FreqBand.value, MaxFreq.value, MinFreq.value,  OutputPower.value, Sensitivity.value, DataRate.value, url.value )" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Transceivers Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let transceiver of transceivers">
+                        <mat-expansion-panel-header>
+                            {{transceiver.Name}} 
+                        </mat-expansion-panel-header>
+                        Name: {{transceiver.Name}} <br>
+                        FrequencyBand: {{transceiver.FrequencyBand}} <br>
+                        MaxFrequency_GHz: {{transceiver.MaxFrequency_GHz}} <br>
+                        MinFrequency_GHz: {{transceiver.MinFrequency_GHz}} <br>
+                        OutputPower_dBm: {{transceiver.OutputPower_dBm}} <br>
+                        Sensitivity_dBm: {{transceiver.Sensitivity_dBm}} <br>
+                        DataRate_kbps: {{transceiver.DataRate_kbps}} <br>
+                        url: {{transceiver.url}} <br>
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+

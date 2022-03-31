@@ -1,0 +1,453 @@
+<!-- Reference- David Akim(2022) -->
+
+<div class="sect">
+    <h2>VSAT Link Designs</h2>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter all following Inputs</mat-card-header>
+        <mat-card-content>
+            <div>
+
+                <mat-form-field>
+                    <mat-label>Enter Design Number</mat-label>
+                    <input
+                        matInput type="string"
+                        #DesN
+                        
+                     
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Earth Station Latitude Name</mat-label>
+                    <input
+                        matInput type="string"
+                        #ESlat
+                        
+                     
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Earth Station Longtitude</mat-label>
+                    <input
+                        matInput type="string"
+                        #ESlong
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Satellite Longtitude</mat-label>
+                    <input
+                        matInput type="string"
+                        #Slong
+                      
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #AzNW
+                      
+
+
+                    >
+
+                    <input
+                        matInput type="string"
+                        #AzNE
+                      
+
+
+                    >
+
+                    <input
+                        matInput type="string"
+                        #AzSW
+                      
+
+
+                    >
+
+                    <input
+                        matInput type="string"
+                        #AzSE
+                      
+
+
+                    >
+
+                    <input
+                        matInput type="string"
+                        #SR
+                      
+
+
+                    >
+
+                    <input
+                        matInput type="string"
+                        #EA
+                      
+
+
+                    >
+
+
+
+
+                
+                <mat-form-field>
+                    <mat-label>Enter Rain Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #RainRate
+                      
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Rain Rate Coefficient</mat-label>
+                    <input
+                        matInput type="string"
+                        #RRC
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Rain Rate Power</mat-label>
+                    <input
+                        matInput type="string"
+                        #RRP
+                        
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #RL
+                      
+
+
+                    >
+
+
+
+                <mat-form-field>
+                    <mat-label>Enter Uplink Frequency</mat-label>
+                    <input
+                        matInput type="string"
+                        #UF
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #FSPLUplink
+                      
+
+
+                    >
+
+                <mat-form-field>
+                    <mat-label>Enter Earth Station Feeder Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #ESFL
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Antenna Misalignment Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #AML
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarization Misalignment Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #PML
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Atmospheric Absorption Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #AAL
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #UTL
+                      
+
+
+                    >
+
+                
+                <mat-form-field>
+                    <mat-label>Enter Power Earth Station Antenna</mat-label>
+                    <input
+                        matInput type="string"
+                        #PESA
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Gain Earth Station Antenna</mat-label>
+                    <input
+                        matInput type="string"
+                        #GESA
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Gain Satellite Antenna</mat-label>
+                    <input
+                        matInput type="string"
+                        #GSA
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                        matInput type="string"
+                        #SRP
+                      
+
+
+                    >
+                    
+                <mat-form-field>
+                    <mat-label>Enter Noise Temperature Satellite</mat-label>
+                    <input
+                        matInput type="string"
+                        #NTS
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Channel Bandwidth</mat-label>
+                    <input
+                        matInput type="string"
+                        #CB
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                    <input
+                    matInput type="string"
+                    #UNTCR
+                  
+
+
+                >
+
+            
+                <mat-form-field>
+                <mat-label>Enter Downlink Frequency</mat-label>
+                <input
+                    matInput type="string"
+                    #DF
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+                <input
+                matInput type="string"
+                #FSPLDownlink
+              
+
+
+                >
+
+                <input
+                matInput type="string"
+                #DTL
+          
+
+
+                >
+
+        
+                 <mat-form-field>
+                 <mat-label>Enter Power Satellite Antenna</mat-label>
+                <input
+                matInput type="string"
+                #PSA
+               
+
+
+                required>
+
+            </mat-form-field>
+
+                <input
+                matInput type="string"
+                #ESRP
+          
+
+
+                >
+
+        
+                <mat-form-field>
+                <mat-label>Enter Earth Station Noise Temperature</mat-label>
+                <input
+                matInput type="string"
+                #ESNT
+               
+
+
+                required>
+
+            </mat-form-field>
+
+                <input
+                matInput type="string"
+                 #DNTCR
+          
+
+
+                >
+
+                <input
+                matInput type="string"
+                #TNTCR
+          
+
+
+                >
+
+
+                
+                <button mat-raised-button (click)="onAdd(DesN.value, ESlat.value, ESlong.value, Slong.value, AzNW.value,  AzNE.value, AzSW.value, AzSE.value, SR.value,  EA.value, RainRate.value, RRC.value, RRP.value, RL.value, UF.value, FSPLUplink.value, ESFL.value, AML.value, PML.value, AAL.value, UTL.value, PESA.value, GESA.value, GSA.value, SRP.value, NTS.value, CB.value, UNTCR.value, DF.value, FSPLDownlink.value, DTL.value, PSA.value, ESRP.value, ESNT.value, DNTCR.value, TNTCR.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>VSAT Link Designs Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let vsatdesign of vsatdesigns">
+                        <mat-expansion-panel-header>
+                            {{vsatdesign.DesignNumber}}
+
+                        </mat-expansion-panel-header>
+                        ES_DesignNumber: {{vsatdesign.DesignNumber}} <br>
+                        ES_latitude: {{vsatdesign.ES_latitude}} <br>
+                        ES_longtitude: {{vsatdesign.ES_longtitude}} <br>
+                        S_longtitude: {{vsatdesign.S_longtitude}} <br>
+                        AzimuthNW: {{vsatdesign.AzimuthNW}} <br>
+                        AzimuthNE: {{vsatdesign.AzimuthNE}} <br>
+                        AzimuthSW: {{vsatdesign.AzimuthSW}} <br>
+                        AzimuthSE: {{vsatdesign.AzimuthSE}} <br>
+                        SlantRange_km: {{vsatdesign.SlantRange_km}} <br>
+                        ElevationAngle: {{vsatdesign.ElevationAngle}} <br>
+                        RainRate_mm_per_h: {{vsatdesign.RainRate_mm_per_h}} <br>
+                        RainRateCoefficient: {{vsatdesign.RainRateCoefficient}} <br>
+                        RainRatePower: {{vsatdesign.RainRatePower}} <br>
+                        RainLoss_dB: {{vsatdesign.RainLoss_dB}} <br>
+                        UplinkFrequency_MHz: {{vsatdesign.UplinkFrequency_MHz}} <br>
+                        FSPLUplink_dB: {{vsatdesign.FSPLUplink_dB}} <br>
+                        ESFeederLoss_dB: {{vsatdesign.ESFeederLoss_dB}} <br>
+                        AntennaMisalignmentLoss_dB: {{vsatdesign.AntennaMisalignmentLoss_dB}} <br>
+                        PolarizationMisalignmentLoss_dB: {{vsatdesign.PolarizationMisalignmentLoss_dB}} <br>
+                        AtmosphericAbsorptionLoss_dB: {{vsatdesign.AtmosphericAbsorptionLoss_dB}} <br>
+                        UplinkTotalLosses_dB: {{vsatdesign.UplinkTotalLosses_dB}} <br>
+                        PowerESAntenna_dB: {{vsatdesign.PowerESAntenna_dB}} <br>
+                        GainESAntenna_dB: {{vsatdesign.GainESAntenna_dB}} <br>
+                        GainSatelliteAntenna_dB: {{vsatdesign.GainSatelliteAntenna_dB}} <br>
+                        SatelliteReceivedPower_dB: {{vsatdesign.SatelliteReceivedPower_dB}} <br>
+                        NoiseTemperatureSatellite_K: {{vsatdesign.NoiseTemperatureSatellite_K}} <br>
+                        ChannelBandwidth_MHz: {{vsatdesign.ChannelBandwidth_MHz}} <br>
+                        UplinkNoisetoCarrierRatio_dB: {{vsatdesign.UplinkNoisetoCarrierRatio_dB}} <br>
+                        DownlinkFrequency_MHz: {{vsatdesign.DownlinkFrequency_MHz}} <br>
+                        FSPLDownlink_dB: {{vsatdesign.FSPLDownlink_dB}} <br>
+                        DownlinkTotalLosses_dB: {{vsatdesign.DownlinkTotalLosses_dB}} <br>
+                        PowerSatelliteAntenna_dB: {{vsatdesign.PowerSatelliteAntenna_dB}} <br>
+                        ESReceivedPower_dB: {{vsatdesign.ESReceivedPower_dB}} <br>
+                        NoiseTemperatureES_K: {{vsatdesign.NoiseTemperatureES_K}} <br>
+                        DownlinkNoisetoCarrierRatio_dB: {{vsatdesign.DownlinkNoisetoCarrierRatio_dB}} <br>
+                        TotalNoisetoCarrierRatio_dB: {{vsatdesign.TotalNoisetoCarrierRatio_dB}} <br>
+                        
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
